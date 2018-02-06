@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400&subset=cyrillic');
+
+/* Код для подключения шрифта в /css/stylename.css */
+
+@font-face {
+	font-family: "MyriadProRegular";
+	src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+	src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+	url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+.center,
+.my_btn {
+	text-align: center
+}
+
+.display,
+.my_btn {
+	display: block
+}
+
+#CDT,
+.screen,
+.wrapper {
+	overflow: hidden
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: MyriadProRegular, sans-serif;
+	font-weight: normal;
+}
+
+.bold,
+.ffff00 {
+	font-weight: 700
+}
+
+body {
+	background: url(images/bgBody.jpg);
+	background-size: 90%
+}
+
+a.title_a {
+	font-size: 18px
+}
+
+a.title_a.collapsed::after {
+	content: " + ";
+	float: right
+}
+
+a.title_a::after {
+	content: " - ";
+	float: right
+}
+
+.panel-primary > .panel-heading + .panel-collapse > .panel-body {
+	font-size: 18px
+}
+
+.my_btn {
+	width: 100%;
+	margin: 0 auto
+}
+
+.ffff00 {
+	color: #ff0
+}
+
+.col3399ff {
+	color: #39f
+}
+
+.cc9900 {
+	color: #c90
+}
+
+.d0d0d0 {
+	color: #d0d0d0
+}
+
+.ff9999 {
+	color: #f99
+}
+
+.ff3535 {
+	color: #ff3535;
+}
+
+.f15 {
+	font-size: 15px
+}
+
+.f18 {
+	font-size: 18px
+}
+
+.f24 {
+	font-size: 24px
+}
+
+.f30 {
+	font-size: 30px
+}
+
+.f32 {
+	font-size: 32px
+}
+
+.f48 {
+	font-size: 48px
+}
+
+.wrapper {
+	width: 1080px;
+	margin: 0 auto
+}
+
+.menu {
+	width: 180px;
+	height: 100vh;
+	position: fixed;
+	z-index: 999;
+	display: block;
+	float: left;
+	padding: 1%;
+	background: rgba(59, 60, 62, 0.6);
+	box-shadow: 0 0 5px rgba(0, 0, 0, .5)
+}
+
+.menu_active {}
+
+.call > a,
+.logo > img,
+.screen_1::after {
+	width: 100%;
+	display: block
+}
+
+.my_nav {
+	padding: 10px 0;
+	margin: 0;
+	list-style: none;
+	color: #fff
+}
+
+.my_nav > li > a,
+.my_nav > li > a:hover {
+	color: white;
+	font-size: 16px;
+	padding: 0 3px;
+	text-decoration: none
+}
+
+.my_nav > li > a.current,
+.my_nav > li > a.current:hover {
+	background: #fff;
+	color: black;
+	text-decoration: none
+}
+
+.logo {
+	padding: 10%;
+	margin: 15px 0;
+
+}
+
+.phones2,
+.work_time {
+	padding-bottom: 20px;
+	line-height: initial;
+	font-size: 16px;
+	color: white;
+	text-align: center
+}
+
+.logo > img {
+	margin: 0 auto
+}
+
+.call {
+	text-align: center;
+	color: yellow;
+	padding-bottom: 5px;
+	line-height: initial
+}
+
+.call > a {
+	background: #4fb8f5;
+	border-radius: 50px;
+	font-size: 16px;
+	margin: 5px 0;
+	padding: 10px 0;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	box-shadow: 0 5px 11px rgba(0, 0, 0, .2)
+}
+
+.soc {
+	text-align: center
+}
+
+.soc > a {
+	color: #fff;
+	margin: 0 5px
+}
+
+.screen {
+	padding-left: 180px;
+	padding-bottom: 30px
+}
+
+.screen_1 {
+	height: 100%;
+	background: url(images/bg1.jpg) bottom center;
+	background-size: cover;
+	color: #fff;
+	padding-top: 20px;
+	position: relative
+}
+
+.screen_1::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	background: rgba(0, 0, 0, .3);
+	top: 0
+}
+
+.screen .container,
+.screen > .content {
+	z-index: 1;
+	position: relative
+}
+
+.screen_10,
+.screen_12,
+.screen_2,
+.screen_4,
+.screen_6,
+.screen_8 {
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5)
+}
+
+.screen_12 {
+	background: #014e8a
+}
+
+.screen > .content {
+	width: 88%;
+	float: right;
+	padding: 15px
+}
+
+.screen h1 {
+	text-align: center;
+	margin: 0;
+	padding: 30px 15px;
+	color: #3a84c1;
+	text-transform: uppercase
+}
+
+.screen span.title {
+	display: block;
+	font-size: 36px;
+	font-weight: 700
+}
+
+.screen span.pos_title {
+	display: block;
+	font-size: 24px;
+	color: #f99
+}
+
+.screen .info {
+	padding: 60px 0;
+	font-size: 18px
+}
+
+.screen .list {
+	font-size: 18px;
+	margin-bottom: 30px
+}
+
+.screen .sale {
+	font-size: 24px;
+	margin: 15px 0
+}
+
+.screen .icon-wrap {
+	height: 160px
+}
+
+.screen .icon-wrap > p {
+	text-align: center;
+	font-size: 16px
+}
+
+.screen .icon,
+.screen .icon > i {
+	font-size: 60px;
+	color: #7dcf34
+}
+
+.screen .nedostatki > p {
+	text-align: center;
+	font-size: 16px
+}
+
+.screen .nedostatki > img {
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+	border: 1px solid gray
+}
+
+.screen .otovare > p {
+	font-size: 18px
+}
+
+.screen .form-wrap1 > p {
+	font-size: 18px;
+	text-align: center
+}
+
+.screen .form-wrap1 > form {
+	display: block;
+	width: 300px;
+	margin: 0 auto
+}
+
+.screen .form-wrap1 > form > input[type=text] {
+	display: block;
+	width: 100%;
+	margin: 15px 0;
+	padding: 5px 15px;
+	border: 1px solid #72c1fc;
+	outline: 0
+}
+
+.screen .form-wrap1 > form > input[type=submit] {
+	background: #4fb8f5;
+	width: 40%;
+	display: block;
+	border-radius: 50px;
+	font-size: 16px;
+	margin: 5px auto;
+	padding: 10px 0;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	box-shadow: 0 5px 11px rgba(0, 0, 0, .2);
+	border: none;
+	outline: 0
+}
+
+.screen .grid_cols_7 {
+	display: flex
+}
+
+.screen .grid_cols_7 > .grid_col {
+	height: 270px
+}
+
+.screen .grid_cols_7 > .grid_col > p {
+	font-size: 16px;
+	text-align: center;
+	height: 20px
+}
+
+.screen .color-wrap > p {
+	font-size: 18px
+}
+
+.screen .photo-wrap > p {
+	font-size: 16px;
+	text-align: center;
+	display: block;
+	width: 90%;
+	margin: 15px auto
+}
+
+.screen .blue_block {
+	background: #e8f7ff;
+	padding: 20px
+}
+
+.screen .algoritm > p {
+	font-size: 18px
+}
+
+.screen .form-wrap2 > form {
+	display: block;
+	width: 80%;
+	margin: 0 auto
+}
+
+.screen .form-wrap2 > p {
+	text-align: center
+}
+
+.screen .form-wrap2 > form > input[type=text] {
+	display: inline-block;
+	width: 45%;
+	margin: 15px 5px;
+	padding: 5px 15px;
+	border: 1px solid #72c1fc;
+	outline: 0
+}
+
+.screen .form-wrap2 > form > input.end_input {
+	display: inline-block;
+	width: 93%;
+	margin: 5px;
+	padding: 5px 15px;
+	border: 1px solid #72c1fc;
+	outline: 0
+}
+
+.screen .form-wrap2 > form > input[type=submit] {
+	background: #4fb8f5;
+	width: 40%;
+	display: block;
+	border-radius: 50px;
+	font-size: 16px;
+	margin: 15px auto;
+	padding: 10px 0;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	box-shadow: 0 5px 11px rgba(0, 0, 0, .2);
+	border: none;
+	outline: 0
+}
+
+#CDT {
+	padding: 10px;
+	border: 1px solid #fff;
+	width: 200px;
+	text-align: center
+}
+
+.number-wrapper {
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 36px
+}
+
+.caption {
+	font-size: 12px;
+	text-align: center
+}
+
+@media (min-width:1441px) {
+	.screen h1 {
+		font-size: 28px
+	}
+	.screen .icon-wrap > p,
+	.screen .nedostatki > p {
+		font-size: 18px;
+		height: 50px;
+	}
+	.screen .form-wrap1 > p,
+	.screen .otovare > p {
+		font-size: 20px
+	}
+	.screen .grid_cols_7 > .grid_col > p {
+		font-size: 18px;
+		height: 40px;
+	}
+	.f20 {
+		font-size: 20px;
+	}
+	.screen .algoritm > p,
+	.screen .color-wrap > p,
+	.screen .form-wrap2 > p,
+	.screen .photo-wrap > p {
+		font-size: 20px
+	}
+}
