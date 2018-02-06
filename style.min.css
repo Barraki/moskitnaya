@@ -129,7 +129,7 @@ a.title_a::after {
 	z-index: 999;
 	display: block;
 	float: left;
-	padding: 1%;
+	padding: 0px 15px;
 	background: rgba(59, 60, 62, 0.6);
 	box-shadow: 0 0 5px rgba(0, 0, 0, .5)
 }
@@ -144,7 +144,7 @@ a.title_a::after {
 }
 
 .my_nav {
-	padding: 10px 0;
+	padding: 15px 0;
 	margin: 0;
 	list-style: none;
 	color: #fff
@@ -154,7 +154,7 @@ a.title_a::after {
 .my_nav > li > a:hover {
 	color: white;
 	font-size: 16px;
-	padding: 0 3px;
+	padding: 0 5px;
 	text-decoration: none
 }
 
@@ -167,17 +167,22 @@ a.title_a::after {
 
 .logo {
 	padding: 10%;
-	margin: 15px 0;
-
+	margin: 1px 0;
+	background-color: aliceblue
 }
 
 .phones2,
 .work_time {
-	padding-bottom: 20px;
+	margin-top: 25px;
 	line-height: initial;
-	font-size: 16px;
+	font-size: 20px;
 	color: white;
-	text-align: center
+	text-align: left;
+}
+
+.work_time {
+	font-size: 15px;
+	text-align: left;
 }
 
 .logo > img {
@@ -187,15 +192,14 @@ a.title_a::after {
 .call {
 	text-align: center;
 	color: yellow;
-	padding-bottom: 5px;
-	line-height: initial
+	margin-top: 20px;
 }
 
 .call > a {
 	background: #4fb8f5;
 	border-radius: 50px;
 	font-size: 16px;
-	margin: 5px 0;
+	margin: 5px 0px;
 	padding: 10px 0;
 	color: #fff;
 	text-transform: uppercase;
@@ -204,12 +208,14 @@ a.title_a::after {
 }
 
 .soc {
-	text-align: center
+	text-align: center;
+	margin-top: 15px;
 }
 
 .soc > a {
 	color: #fff;
-	margin: 0 5px
+	margin: 10px;
+
 }
 
 .screen {
@@ -265,7 +271,8 @@ a.title_a::after {
 	margin: 0;
 	padding: 30px 15px;
 	color: #3a84c1;
-	text-transform: uppercase
+	text-transform: uppercase;
+	font-size: 29px;
 }
 
 .screen span.title {
@@ -307,7 +314,7 @@ a.title_a::after {
 .screen .icon,
 .screen .icon > i {
 	font-size: 60px;
-	color: #7dcf34
+	color: skyblue
 }
 
 .screen .nedostatki > p {
