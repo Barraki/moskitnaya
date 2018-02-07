@@ -79,9 +79,9 @@ $(document).ready(function () {
 			}
 		});
 	}
+});
 
-
-
+$(document).ready(function () {
 	jQuery(document).on("scroll", onScroll);
 
 	jQuery(".my_nav a[href^=#]").click(function (e) {
@@ -101,6 +101,9 @@ $(document).ready(function () {
 		});
 
 	});
+});
+
+$(document).ready(function () {
 
 
 	$(window).scroll(function () {
