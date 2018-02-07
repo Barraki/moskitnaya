@@ -101,11 +101,12 @@ jQuery(".my_nav a[href^=#]").click(function (e) {
 
 });
 
-
-$(window).scroll(function () {
-	if ($(this).scrollTop() > 1) {
-		$('header').addClass("menu-scroll");
-	} else {
-		$('header').removeClass("menu-scroll");
-	}
+$(document).ready(function () {
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1) {
+			$('header').addClass("menu-scroll");
+		} else {
+			$('header').removeClass("menu-scroll");
+		}
+	})
 });
