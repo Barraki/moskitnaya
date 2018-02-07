@@ -64,39 +64,49 @@ var menu_selector = ".my_nav"; // Переменная должна содерж
 var menu = jQuery('#header').outerHeight();
 jQuery(".my_nav li:first-child a").addClass("current");
 
-function onScroll(){
-    var scroll_top = jQuery(document).scrollTop();
-    
-    jQuery(menu_selector + " a").each(function(){
-        var hash = jQuery(this).attr("href");
-        var target = jQuery(hash);
-        if (target.position().top - menu <= scroll_top && target.position().top + target.outerHeight()  > scroll_top) {
-            jQuery(menu_selector + " a.current").removeClass("current");
-            jQuery(this).addClass("current");
-        } else {
-            jQuery(this).removeClass("current");
-        }
-    });
-}
- 
+function onScroll() {
+	var scroll_top = jQuery(document).scrollTop();
 
- 
+	jQuery(menu_selector + " a").each(function () {
+		var hash = jQuery(this).attr("href");
+		var target = jQuery(hash);
+		if (target.position().top - menu <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+			jQuery(menu_selector + " a.current").removeClass("current");
+			jQuery(this).addClass("current");
+		} else {
+			jQuery(this).removeClass("current");
+		}
+	});
+}
+
+
+
 jQuery(document).on("scroll", onScroll);
 
-jQuery(".my_nav a[href^=#]").click(function(e){
-    e.preventDefault();
+jQuery(".my_nav a[href^=#]").click(function (e) {
+	e.preventDefault();
 
-    jQuery(document).off("scroll");
-    jQuery(menu_selector + " .current").removeClass("current");
-    jQuery(this).addClass("current");
-    var hash = jQuery(this).attr("href");
-    var target = jQuery(hash);
-    jQuery("html, body").animate({
-        scrollTop: target.offset().top
-    }, 300, function(){
-        window.location.hash = hash;
-        jQuery(document).on("scroll", onScroll);
-        
-    });
+	jQuery(document).off("scroll");
+	jQuery(menu_selector + " .current").removeClass("current");
+	jQuery(this).addClass("current");
+	var hash = jQuery(this).attr("href");
+	var target = jQuery(hash);
+	jQuery("html, body").animate({
+		scrollTop: target.offset().top - 50
+	}, 300, function () {
+		window.location.hash = hash;
+		jQuery(document).on("scroll", onScroll);
 
+	});
+
+});
+
+$(document).ready(function () {
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1) {
+			$('header').addClass("menu-scroll");
+		} else {
+			$('header').removeClass("menu-scroll");
+		}
+	});
 });
